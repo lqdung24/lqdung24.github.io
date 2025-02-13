@@ -67,7 +67,7 @@
       <img id="imageDisplay" src="./image1.gif" alt="Cute kitten with flowers" class="rounded-md h-[300px]" style="object-fit: cover;" />
 
       <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">Will you be my Valentine?</h2>
-
+      <h2 id="line1" class="text-4xl font-bold italic text-[#bd1e59] my-4"></h2>
       <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
 
         <button id="yesButton"
@@ -105,6 +105,8 @@
     const imageDisplay = document.getElementById('imageDisplay');
 
     const valentineQuestion = document.getElementById('valentineQuestion');
+
+    const line1 = document.getElementById('line1');
 
     const responseButtons = document.getElementById('responseButtons');
 
@@ -175,6 +177,9 @@
       imageDisplay.src = './image7.gif'; // Change to image7.gif
 
       valentineQuestion.textContent = "Yayyy!! :3\n Chúc em Valentine vui vẻ\nXinh như hoa\nThông minh như anh=)))\n\nFrom ldt with luv"; // Change the question text
+
+      line1.textContent = "Chúc em Valentine vui vẻ";
+      
 
       responseButtons.style.display = 'none'; // Hide both buttons
 
